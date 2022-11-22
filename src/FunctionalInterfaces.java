@@ -4,11 +4,13 @@ public class FunctionalInterfaces {
       selection();
     }
     public static void chekDivideBy13(){
+        System.out.println("Делится на 13 без остатка");
         DivideBy13<Integer> res = y -> y % 13 == 0;
-        System.out.println("26 делится на 13 без остатка: " + res.itsTrue(26));
-        System.out.println("27 делится на 13 без остатка: " + res.itsTrue(27));
+        System.out.println("26: " + res.itsTrue(26));
+        System.out.println("27: " + res.itsTrue(27));
     }
     public static void selection(){
+        System.out.print("Наиоблее длинная строка: ");
         LineSelection<String> stringWithMaxLength = (s1, s2) -> {
             if (s2.length() > s1.length()) {
                 return s2;
