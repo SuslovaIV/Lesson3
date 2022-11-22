@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class MyArrayDataException {
+ class MyArrayDataException extends Throwable  {
+    public MyArrayDataException(String errorMassage) {
+        super(errorMassage);
+    }
 }
