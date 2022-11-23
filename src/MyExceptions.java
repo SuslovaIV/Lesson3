@@ -1,4 +1,4 @@
-public class Main {
+public class MyExceptions {
     public static Integer getSum(Object[][] array) throws MyArraySizeExeption, MyArrayDataException {
         int sum = 0;
         if (array.length != 4) {
